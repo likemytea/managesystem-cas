@@ -1,0 +1,60 @@
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation" th:fragment="myleftmenu">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" src="http://test.mystaticdomain.com/img/profile_small.jpg" /></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="http://test.mystaticdomain.com/#">
+                                <span class="clear">
+                               <span th:text="${user.username}" class="block m-t-xs"><strong class="font-bold"></strong></span>
+                                <span class="text-muted text-xs block"><a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/homepage}">超级管理员</a><b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="J_menuItem" href="http://test.mystaticdomain.com/form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a class="J_menuItem" href="http://test.mystaticdomain.com/profile.html">个人资料</a>
+                                </li>
+                                <li><a class="J_menuItem" href="http://test.mystaticdomain.com/contacts.html">联系我们</a>
+                                </li>
+                                <li><a class="J_menuItem" href="http://test.mystaticdomain.com/mailbox.html">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="http://test.mystaticdomain.com/login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">H+
+                        </div>
+                    </li>
+                
+                    <li>
+                        <a href="http://test.mystaticdomain.com/#"><i class="fa fa-table"></i> <span class="nav-label">系统</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="J_menuItem" href="http://localhost:8060/h5/list.html">用户管理
+                                <span class="label label-danger pull-right">TODO</span></a>
+                            </li>
+                            <li><a class="J_menuItem" href="http://172.16.176.102:8761/">eureka(服务监控中心)
+                                </a>
+                            </li>                            
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="J_menuItem" href="http://test.mystaticdomain.com/css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
+                    </li>
+                    <li>
+                        <a href="http://test.mystaticdomain.com/#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="J_menuItem" href="http://test.mystaticdomain.com/form_builder.html">表单构建器</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->
