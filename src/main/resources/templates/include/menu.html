@@ -34,7 +34,8 @@
                     <li>
                         <a href="https://test.mystaticdomain.com/#"><i class="fa fa-table"></i> <span class="nav-label">系统</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="https://test.huayubenji.com:8443/mycas/h5/list.html">用户管理
+                        
+                            <li><a th:href="${#httpServletRequest.getContextPath()+'/h5/list.html'}"  class="J_menuItem">用户管理
                                 <span class="label label-danger pull-right">TODO</span></a>
                             </li>
                             <li><a class="J_menuItem" href="http://172.16.176.102:8761/">eureka(服务监控中心)
