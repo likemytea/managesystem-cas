@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>使用vue2.5.17与bootstrap3列表分页</title>
-    <link href="http://test.mystaticdomain.com/css/bootstrap.min.css?v=3.3.6" rel="stylesheet"/>
-    <script type="text/javascript" src="http://test.mystaticdomain.com/js/vue-2.5.17.js"></script>
-    <script type="text/javascript" src="http://test.mystaticdomain.com/js/jquery.min.js"></script>
+    <link href="https://test.mystaticdomain.com/css/bootstrap.min.css?v=3.3.6" rel="stylesheet"/>
+    <script type="text/javascript" src="https://test.mystaticdomain.com/js/vue-2.5.17.js"></script>
+    <script type="text/javascript" src="https://test.mystaticdomain.com/js/jquery.min.js"></script>
   </head>
   <body>
  
@@ -117,7 +117,7 @@
          var $totalCount = 0;
 	   	 var toSend=$.ajax({
 		     type:'get',
-		     url:'http://localhost:8060/system/user/list',
+		     url:'https://test.huayubenji.com:8443/mycas/system/user/list',
 		     async: false,
 		     data:{currentpage:$page,pagesize:$pageSize},
 		     cache:false,
@@ -149,6 +149,6 @@
     }; 
     </script>
     <!-- 自定义js。特别说明：放在底部的js会在页面都渲染完才运行这些js -->
-    <script type="text/javascript" src="/css/tonginx-mypaging.js"></script>
+    <script type="text/javascript" src="/mycas/css/tonginx-mypaging.js"></script>
   </body>
 </html>
